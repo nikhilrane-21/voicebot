@@ -39,8 +39,8 @@
     "flow": "flow",
     "pretty": "prettier --write src/*",
     "prepare": "yarn build",
-    "serve": "http-server",
-    "start": "parcel index.html"
+    "serve": "http-server"
+    
   },
   "main": "dist/Chatroom.js"
 }

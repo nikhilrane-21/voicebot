@@ -3,7 +3,9 @@
   "version": "0.12.0",
   "license": "AGPL-3.0",
   "engines": {
-    "node": "18.12.0"
+    "node": "18.12.0",
+    "npm": "8.19.2",
+    "yarn": "1.22.19"
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.4",

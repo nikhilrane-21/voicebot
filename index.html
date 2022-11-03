@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./dist/Chatroom.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+
+    <title>VoiceChatBot Demo</title>
+  </head>
+  <body>
+  <h1>SAMPLE WEBSITE PAGE...</h1>
+
+<!--  <div class="container">-->
+<!--    <div class="widget">-->
+<!--      <div class="chat_header">-->
+<!--        &lt;!&ndash;Add the name of the bot here &ndash;&gt;-->
+<!--                <span class="chat_header_title">Chat AI</span>-->
+<!--                <span class="dropdown-trigger" href='#' data-target='dropdown1'>-->
+<!--                  <i class="material-icons"> more_vert </i>-->
+<!--               </span>-->
+<!--        <ul id='dropdown1' class='dropdown-content'>-->
+<!--                    <li><a href="#" id="clear">Clear</a></li>-->
+<!--                    <li><a href="#" id="restart">Restart</a></li>-->
+<!--                    <li><a href="#" id="close">Close</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--      &lt;!&ndash;Chatbot contents goes here &ndash;&gt;-->
+<!--            <div class="chats" id="chats">-->
+<!--                <div class="clearfix"></div>-->
+
+<!--            </div>-->
+<!--      &lt;!&ndash;keypad for user to type the message &ndash;&gt;-->
+<!--            <div class="keypad">-->
+<!--                <textarea id="userInput" placeholder="Type a message..." class="usrInput"></textarea>-->
+<!--                <div id="sendButton"><i class="fa fa-paper-plane" aria-hidden="true"></i></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    &lt;!&ndash;bot profile&ndash;&gt;-->
+<!--        <div class="profile_div" id="profile_div">-->
+<!--            <img class="imgProfile" src="static/img/boticonAvatar.png" />-->
+<!--        </div>-->
+<!--    &lt;!&ndash; Bot pop-up intro &ndash;&gt;-->
+<!--        <div class="tap-target" data-target="profile_div">-->
+<!--            <div class="tap-target-content">-->
+<!--                <h5 class="white-text">Hey 👋</h5>-->
+<!--                <p class="white-text">I can answer your questions.</p>-->
+
+<!--            </div>-->
+<!--        </div>-->
+
+<!--    </div>-->
+<!--    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--    <script type="text/javascript" src="static/js/materialize.min.js"></script>-->
+<!--    <script type="text/javascript" src="static/js/script.js"></script>-->
+<!--    <script type="text/javascript" src="static/js/chart.min.js"></script>-->
+
+
+
+
+
+
+
+
+<!--  ################################################################-->
+    <div class="chat-container"></div>
+    <script src="./dist/Chatroom.js"></script>
+    <script type="text/javascript">
+      window.chatroom = new window.Chatroom({
+        title: "Voice Chat Assistance",
+        container: document.querySelector(".chat-container"),
+        welcomeMessage: "Hello!",
+        host: "http://serverforchatbot.herokuapp.com",
+        speechRecognition: "en-US",
+        voiceLang: "en-US"
+      });
+      window.chatroom.openChat();
+    </script>
+<!--  ####################################################################-->
+
+  </body>
+</html>
